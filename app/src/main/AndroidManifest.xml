@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015-2015 by Shanghai shootbox Information Technology Co., Ltd.
+  ~ Create: 2015/10/8 1:51:4
+  ~ Project: GetCityByIP
+  ~ File: AndroidManifest.xml
+  ~ Class: AndroidManifest.xml
+  ~ Module: app
+  ~ Author: yangyankai
+  ~ Version: 1.0
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ykai.getcitybyip" >
+
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

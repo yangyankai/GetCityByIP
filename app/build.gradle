@@ -1,0 +1,40 @@
+/*
+ * Copyright (c) 2015-2015 by Shanghai shootbox Information Technology Co., Ltd.
+ * Create: 2015/10/8 1:53:38
+ * Project: GetCityByIP
+ * File: build.gradle
+ * Class: build.gradle
+ * Module: app
+ * Author: yangyankai
+ * Version: 1.0
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.ykai.getcitybyip"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile files('libs/android-async-http-1.4.4.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/android-async-http-1.4.6.jar')
+}
